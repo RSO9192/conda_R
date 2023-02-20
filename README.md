@@ -1,4 +1,4 @@
-# Tutorial on using conda and R
+# Tutorial on using conda/mamba and R
 
 ## Brief introduction
 If you are an R user, it is possible that you simply installed R and RStudio in default locations. However, when you need to use specific version of R or some libraries require specific versions of R to be installed, then you need to understand environments. 
