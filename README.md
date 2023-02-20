@@ -30,3 +30,12 @@ To install packages into your environment, type
 R #launch R
 install.packages("dplyr")
 ```
+If you want to install RStudio, you can, by tipying:
+
+``` 
+mamba install -c conda-forge -c r rstudio
+
+```
+and then you can launch RStudio from your environment, while active. [You can also install RStudio outside your environment](https://stackoverflow.com/questions/38534383/how-to-set-up-conda-installed-r-for-use-with-rstudio) so that it can be used for any R versions if you are using multiple environments
+
+
