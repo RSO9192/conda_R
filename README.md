@@ -36,6 +36,16 @@ If you want to install RStudio, you can, by tipying:
 mamba install -c conda-forge -c r rstudio
 
 ```
-and then you can launch RStudio from your environment, while active. [You can also install RStudio outside your environment](https://stackoverflow.com/questions/38534383/how-to-set-up-conda-installed-r-for-use-with-rstudio) so that it can be used for any R versions if you are using multiple environments
+and then you can launch RStudio from your environment and work in RStudio and you would normally do. The only difference is that now all your installed libraries will only exist within the environment. Thus, to access them, you need to activate the environment first and then launch rstudio. 
+[You can also install RStudio outside your environment](https://stackoverflow.com/questions/38534383/how-to-set-up-conda-installed-r-for-use-with-rstudio) so that it can be used for any R versions if you are using multiple environments
 
+## Solving dependencies issues
+If you install packages with install.packages and you encounter problem with dependencies or others, the best way is trying rhumba, the R package manager. To install it, open a terminal and type
 
+``` 
+conda activate first_env # activate env
+mamba install rhumba # install rhumba
+R # launch R
+rhumba::install("r-purrr") # install purrr via rhumba
+
+```
