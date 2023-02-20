@@ -17,14 +17,22 @@ The first thing is installing [mamba](https://github.com/conda-forge/miniforge#m
 
 Now you can simply activate your environment by typing 
 
-```conda activate first_env```
+```
+conda activate first_env
+```
 
 and, for example, install R and specify a specific version
 
 `mamba install -c conda-forge r-base=4.1.2`
 
 At this point you have installed R version 4.1.2, but this installation exists only inside your environment called first_env. This means you can create as many environments as you want with different versions of R installed. 
-To install packages into your environment, type
+To deactivate an environment type
+
+``` 
+conda deactivate first_env
+```
+
+To install packages into your environment, activate your environment first and then type
 
 ``` 
 R #launch R
@@ -40,7 +48,7 @@ and then you can launch RStudio from your environment and work in RStudio and yo
 [You can also install RStudio outside your environment](https://stackoverflow.com/questions/38534383/how-to-set-up-conda-installed-r-for-use-with-rstudio) so that it can be used for any R versions if you are using multiple environments
 
 ## Solving dependencies issues
-If you install packages with install.packages and you encounter problem with dependencies or others, the best way is trying rhumba, the R package manager. To install it, open a terminal and type
+If you install packages with install.packages and you encounter problem with dependencies or others, the best solution is trying [rhumba](https://github.com/mamba-org/rhumba), the R package manager. To install it, open a terminal and type
 
 ``` 
 conda activate first_env # activate env
