@@ -26,5 +26,7 @@ and, for example, install R and specify a specific version
 At this point you have installed R version 4.1.2, but this installation exists only inside your environment called first_env. This means you can create as many environments as you want with different versions of R installed. 
 To install packages into your environment, type
 
-``` R #launch R
-install.packages("dplyr")```
+``` 
+R #launch R
+install.packages("dplyr")
+```
