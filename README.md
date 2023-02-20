@@ -11,6 +11,14 @@ Mamba is a faster version of conda.
 
 ## Practice
 
-The first thing is installing [mamba](https://github.com/conda-forge/miniforge#mambaforge). After mamba is successfully installed, you can create your first environment! 
+The first thing is installing [mamba](https://github.com/conda-forge/miniforge#mambaforge). After mamba is successfully installed, you can create your first environment! Open a terminal and input
 
+`conda create --name first_env`
 
+Now you can simply activate your environment by typing 
+
+`conda activate first_env`
+
+and, for example, install R and specify a specific version
+
+`mamba install -c conda-forge r-base=4.1.2`
