@@ -57,3 +57,7 @@ R # launch R
 rhumba::install("r-purrr") # install purrr via rhumba
 
 ```
+
+## Final remarks
+
+Now you can work with independent version of R (and other programmes) in a safer and more professional way. 
