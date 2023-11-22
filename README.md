@@ -7,6 +7,8 @@ If you are an R user, it is possible that you simply installed R and RStudio in 
 
 The idea is that you can create [conda environments](https://docs.conda.io/en/latest/) in which you can install all your programmes (e.g R). These programmes now exists inside your environment only. This means you can have multiple environments in your computer, with different versions of R installed, for example. This has several benefits, including the fact that you can share your environment with other people avoiding dependencies issues. 
 
+If you are on windows, install mamba [from here](https://hackmd.io/@swarm/Bk1iZcBTF)
+
 Mamba is a faster version of conda. 
 
 ## Practice
